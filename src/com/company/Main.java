@@ -10,7 +10,7 @@ public class Main {
 
     static void printScores(int tableau[]){
 
-        for(int i = 0;i<5;i++){
+        for(int i = 0;i< tableau.length;i++){
 
             System.out.print(tableau[i]+"|");
 
