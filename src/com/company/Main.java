@@ -12,7 +12,7 @@ public class Main {
 
         for(int i = 0;i<5;i++){
 
-            System.out.println(tableau[i]);
+            System.out.print(tableau[i]+"|");
 
         }
     }
@@ -53,10 +53,17 @@ public class Main {
         score[3] =45 ;
         score[4] =76 ;
 
+        float moyenne = 0;
+        for(int i = 0;i< score.length;i++){
+            moyenne = moyenne+score[i];
 
-        float moyenne = ((score[1]+score[2]+score[3]+score[4]+score[0])/5);
-        boolean moinsDe10 = MoinsDe10(score);
-        System.out.println(moinsDe10);
+
+
+        }
+        moyenne = moyenne/score.length;
+        System.out.printf("ta moyenne est de: "+moyenne);
+
+
 
     }
 
