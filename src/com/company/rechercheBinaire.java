@@ -1,7 +1,12 @@
 package com.company;
 
 public class rechercheBinaire {
-
+    /**
+     * cherche l'index d'un entier dans un tableau
+     * @param tableau d'entier croissant
+     * @param nbRecherche nombre dont on veut rechercher l'index
+     * @return retourne l'index du nombre rechercher ou -1 si il n'est pas dans le tableau
+     */
     public static int rechercheBinaire(int tableau[],int nbRecherche) {
         int valeurMax = tableau[tableau.length - 1];
         int valeurMin = tableau[0];
