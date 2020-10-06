@@ -7,8 +7,14 @@ package com.company;
 
 
 public class Main {
-
-    static void printScores(int tableau[]){
+    /**
+     *affiche le tableau des scores
+     *
+     *
+     *
+     *  @param tableau de scores
+     */
+    public static void printScores(int tableau[]){
 
         for(int i = 0;i< tableau.length;i++){
 
@@ -17,7 +23,12 @@ public class Main {
         }
     }
 
-    static int BestScore(int tableau[]){
+    /**
+     * trouve le meilleur scores
+     * @param tableau de scores
+     * @return le nombre maximum de mon tableau
+     */
+    public static int BestScore(int tableau[]){
         int max = -10;
 
         for(int i = 0;i<5;i++){
@@ -31,7 +42,12 @@ public class Main {
         }return max;
     }
 
-    static boolean MoinsDe10(int tableau[]){
+    /**
+     * cherche si un des scores est inferieur a 10
+     * @param tableau de score
+     * @return boolean qui dit si un des nombres est inferieur a 10
+     */
+    public static boolean MoinsDe10(int tableau[]){
         boolean isMoinsDe10 = false;
         for(int i=0;i<tableau.length;i++){
            if (tableau[i]<10){
